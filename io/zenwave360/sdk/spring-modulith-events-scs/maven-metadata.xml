@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>io.zenwave360.sdk</groupId>
+  <artifactId>spring-modulith-events-scs</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20241226110837</lastUpdated>
+  </versioning>
+</metadata>
