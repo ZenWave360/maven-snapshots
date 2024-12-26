@@ -1,4 +1,4 @@
-# Maven Snapshots Branch
+# ZenWaveSDK Maven Snapshots Repository
 
 Since [Central Publisher Portal does not currently support SNAPSHOT releases](https://central.sonatype.org/faq/snapshot-releases/) we set up this repo to host ZenWaveSDK SNAPSHOT versions.
 
