@@ -3,27 +3,27 @@
   <groupId>io.zenwave360.sdk</groupId>
   <artifactId>spring-modulith-events-scs</artifactId>
   <versioning>
-    <lastUpdated>20241226112804</lastUpdated>
+    <lastUpdated>20241228110500</lastUpdated>
     <snapshot>
-      <timestamp>20241226.112804</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20241228.110500</timestamp>
+      <buildNumber>3</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.0.1-20241226.112804-2</value>
-        <updated>20241226112804</updated>
+        <value>0.0.1-20241228.110500-3</value>
+        <updated>20241228110500</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20241226.112804-2</value>
-        <updated>20241226112804</updated>
+        <value>0.0.1-20241228.110500-3</value>
+        <updated>20241228110500</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>0.0.1-20241226.112804-2</value>
-        <updated>20241226112804</updated>
+        <value>0.0.1-20241228.110500-3</value>
+        <updated>20241228110500</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
