@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2026 ZenWave's Authors and Contributors
+
+  Licensed under the MIT License; see the LICENSE file in the project root.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.github.ivangsa</groupId>
+    <artifactId>git-maven-publisher-parent</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>git-maven-publisher-core</artifactId>
+  <name>git-maven-publisher core</name>
+  <description>Publication logic of git-maven-publisher: JGit and JDK only, no Maven or Gradle API (D-075).</description>
+  <!-- Central requires these in every published POM; repeated here because the raw POM file is what gets uploaded (T32a). -->
+  <url>https://github.com/ivangsa/git-maven-publisher</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>ivangsa</id>
+      <name>Ivan Garcia Sainz-Aja</name>
+      <url>https://github.com/ivangsa</url>
+    </developer>
+  </developers>
+  <scm>
+    <url>https://github.com/ivangsa/git-maven-publisher</url>
+    <connection>scm:git:https://github.com/ivangsa/git-maven-publisher.git</connection>
+    <developerConnection>scm:git:https://github.com/ivangsa/git-maven-publisher.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <dependencies>
+    <!-- Core runtime dependency (D-005). Package io.github.ivangsa.gitpublisher; the architecture test enforces the rule. -->
+    <dependency>
+      <groupId>org.eclipse.jgit</groupId>
+      <artifactId>org.eclipse.jgit</artifactId>
+      <version>${jgit.version}</version>
+    </dependency>
+    <!-- Harness and oracles (test scope only). Test-fixtures does not depend on core, so there is no cycle. -->
+    <dependency>
+      <groupId>io.github.ivangsa</groupId>
+      <artifactId>git-maven-publisher-test-fixtures</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- JGit's HTTP server and Jetty, for the HTTPS and token tests of core. -->
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${jetty.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jgit</groupId>
+      <artifactId>org.eclipse.jgit.http.server</artifactId>
+      <version>${jgit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty.ee10</groupId>
+      <artifactId>jetty-ee10-servlet</artifactId>
+      <version>${jetty.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Coverage for the CI badges and the snapshot summary of the release flow (D-078): target/site/jacoco/jacoco.csv after verify. -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${jacoco-maven-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
