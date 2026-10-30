@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2026 ZenWave's Authors and Contributors
+
+  Licensed under the MIT License; see the LICENSE file in the project root.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+    Reactor parent (D-075, revises D-037). Modules: core (publication logic, published), maven-plugin (published),
+    test-fixtures (harness and golden files, never deployed). The parent is published too: Central requires it.
+  -->
+  <groupId>io.github.ivangsa</groupId>
+  <artifactId>git-maven-publisher-parent</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>git-maven-publisher parent</name>
+  <description>Turns a Git repository into a Maven snapshot repository served as static files.</description>
+  <url>https://github.com/ivangsa/git-maven-publisher</url>
+  <inceptionYear>2026</inceptionYear>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>ivangsa</id>
+      <name>Ivan Garcia Sainz-Aja</name>
+      <url>https://github.com/ivangsa</url>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/ivangsa/git-maven-publisher</url>
+    <connection>scm:git:https://github.com/ivangsa/git-maven-publisher.git</connection>
+    <developerConnection>scm:git:https://github.com/ivangsa/git-maven-publisher.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <modules>
+    <module>test-fixtures</module>
+    <module>core</module>
+    <module>maven-plugin</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+
+    <junit.version>5.14.0</junit.version>
+    <assertj.version>3.27.6</assertj.version>
+    <maven-repository-metadata.version>3.9.16</maven-repository-metadata.version>
+    <maven.version>3.9.16</maven.version>
+    <jackson.version>2.22.4</jackson.version>
+    <maven-resolver.version>2.0.24</maven-resolver.version>
+    <jgit.version>7.8.0.202609011348-r</jgit.version>
+    <jetty.version>12.1.14</jetty.version>
+    <slf4j.version>2.0.17</slf4j.version>
+    <maven-verifier.version>2.0.0</maven-verifier.version>
+
+    <maven-clean-plugin.version>3.4.0</maven-clean-plugin.version>
+    <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
+    <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
+    <maven-surefire-plugin.version>3.6.0</maven-surefire-plugin.version>
+    <maven-failsafe-plugin.version>3.6.0</maven-failsafe-plugin.version>
+    <maven-jar-plugin.version>3.5.0</maven-jar-plugin.version>
+    <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
+    <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
+    <maven-plugin-plugin.version>3.15.1</maven-plugin-plugin.version>
+    <license-maven-plugin.version>5.1.2</license-maven-plugin.version>
+    <maven-invoker-plugin.version>3.9.1</maven-invoker-plugin.version>
+
+    <maven-release-plugin.version>3.3.1</maven-release-plugin.version>
+    <jacoco-maven-plugin.version>0.8.15</jacoco-maven-plugin.version>
+
+    <!-- Release profile only (T32a, D-072, D-078): sources, javadoc, signatures, Central bundle. -->
+    <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+    <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
+    <sign-maven-plugin.version>1.0.0</sign-maven-plugin.version>
+    <central-publishing-maven-plugin.version>0.12.0</central-publishing-maven-plugin.version>
+    <!-- true: build the Central bundle, do not upload it (central-publishing-maven-plugin skipUpload) -->
+    <central.skipUpload>false</central.skipUpload>
+    <!-- true in a module: its artifacts are left out of the bundle altogether (central-publishing-maven-plugin skipPublishing) -->
+    <central.skipPublishing>false</central.skipPublishing>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>${assertj.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- Test scope for every module. Production and harness dependencies are declared by the module that uses them. -->
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>${maven-clean-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>${maven-resources-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>${maven-failsafe-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${maven-jar-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${maven-install-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>${maven-deploy-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-plugin-plugin</artifactId>
+          <version>${maven-plugin-plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <!--
+        maven-release-plugin (D-078, the reusable release-maven.yml of zenwave360/release-workflows): release:prepare only commits
+        and tags locally, the workflow pushes the release branch through a PR. preparationGoals: the plugin ITs pin 0.1.0-SNAPSHOT,
+        so they cannot run at the release version (D-077); they ran in CI at the snapshot version.
+      -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>${maven-release-plugin.version}</version>
+        <configuration>
+          <pushChanges>false</pushChanges>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <preparationGoals>clean verify -Dinvoker.skip=true</preparationGoals>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <systemPropertyVariables>
+            <!-- MavenConsumer (Maven Verifier) forks the same Maven that runs this build -->
+            <maven.home>${maven.home}</maven.home>
+          </systemPropertyVariables>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>${license-maven-plugin.version}</version>
+        <configuration>
+          <useDefaultExcludes>true</useDefaultExcludes>
+          <strictCheck>true</strictCheck>
+          <licenseSets>
+            <licenseSet>
+              <header>${session.executionRootDirectory}/license-header.txt</header>
+              <includes>
+                <include>**/src/**/*.java</include>
+              </includes>
+              <excludes>
+                <!-- sources of the user projects built by the plugin ITs (maven-plugin/src/it) -->
+                <exclude>src/it/**</exclude>
+              </excludes>
+            </licenseSet>
+          </licenseSets>
+        </configuration>
+        <executions>
+          <execution>
+            <id>check-license-headers</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!--
+      Release build (T32a, D-072, D-077, D-078, D-079). Active when SIGN_KEY is in the environment, which only the release
+      workflow sets (release-from-notes.yml calls zenwave360/release-workflows release-maven.yml, which runs mvn deploy with
+      SIGN_KEY and SIGN_KEY_PASS). Not active in ./mvnw verify, in CI, or in a local build without SIGN_KEY; -Prelease also works.
+      Adds sources, javadoc, signatures (sign-maven-plugin reads SIGN_KEY and SIGN_KEY_PASS) and the Central deployment
+      (autoPublish false). invoker.skip: the plugin ITs pin 0.1.0-SNAPSHOT, so they run in CI at the snapshot version only.
+      -Dcentral.skipUpload=true writes the bundle without uploading it (local check). test-fixtures sets central.skipPublishing=true,
+      so it is never in a bundle.
+    -->
+    <profile>
+      <id>release</id>
+      <activation>
+        <property>
+          <name>env.SIGN_KEY</name>
+        </property>
+      </activation>
+      <properties>
+        <invoker.skip>true</invoker.skip>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>${maven-source-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>${maven-javadoc-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.simplify4u.plugins</groupId>
+            <artifactId>sign-maven-plugin</artifactId>
+            <version>${sign-maven-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <!--
+                  Signing as in the ZenWave360 POMs (D-078): sign-maven-plugin reads the armored key from env SIGN_KEY and its
+                  passphrase from SIGN_KEY_PASS. No gpg executable and no keyring on the runner; the key is not written to disk.
+                -->
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>${central-publishing-maven-plugin.version}</version>
+            <extensions>true</extensions>
+            <configuration>
+              <publishingServerId>central</publishingServerId>
+              <autoPublish>false</autoPublish>
+              <skipUpload>${central.skipUpload}</skipUpload>
+              <skipPublishing>${central.skipPublishing}</skipPublishing>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

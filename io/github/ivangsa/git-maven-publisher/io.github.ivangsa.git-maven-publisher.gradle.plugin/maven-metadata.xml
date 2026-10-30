@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>io.github.ivangsa.git-maven-publisher</groupId>
+  <artifactId>io.github.ivangsa.git-maven-publisher.gradle.plugin</artifactId>
+  <versioning>
+    <latest>0.1.0-SNAPSHOT</latest>
+    <versions>
+      <version>0.1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20261025201321</lastUpdated>
+  </versioning>
+</metadata>

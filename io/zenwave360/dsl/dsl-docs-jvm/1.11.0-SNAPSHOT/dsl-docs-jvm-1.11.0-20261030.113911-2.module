@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-docs/1.11.0-SNAPSHOT/dsl-docs-1.11.0-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-docs",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-views",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-docs-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-docs-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 192311,
+          "sha512": "2792062bed8ecdc67e33ee90e64791d772339ffc72de67927d72e004ab492bd11b8c87856f6a1ec186bebc1721ee965141b6bf8abbb3717fe064ce74ecef7b8d",
+          "sha256": "09b07755ed00037fc2f24f9ab74f32b126c1d738c9cd883a8efc8a0735aefe70",
+          "sha1": "0c43e2319f7041828c042bcee8096b99e7113e41",
+          "md5": "0ee81270302a2f5ac7da3f6399f2d88b"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-views",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "it.krzeminski",
+          "module": "snakeyaml-engine-kmp",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-docs-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-docs-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 192311,
+          "sha512": "2792062bed8ecdc67e33ee90e64791d772339ffc72de67927d72e004ab492bd11b8c87856f6a1ec186bebc1721ee965141b6bf8abbb3717fe064ce74ecef7b8d",
+          "sha256": "09b07755ed00037fc2f24f9ab74f32b126c1d738c9cd883a8efc8a0735aefe70",
+          "sha1": "0c43e2319f7041828c042bcee8096b99e7113e41",
+          "md5": "0ee81270302a2f5ac7da3f6399f2d88b"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "dsl-docs-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-docs-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "size": 39790,
+          "sha512": "7bfba565cf1aeabaa3ba44f5d46ff99574f2100ed29255cae666c8ec450484158523e46a5609ad4a3e720728bcdc482c73ed8855a04987c96b1fa58e78fa5350",
+          "sha256": "74e52aae67eaade6cf041d4c047186d2e27b6d7db6e2970044e6e78f5841d350",
+          "sha1": "ac3380d132bc7c6171d6560ea8a625ab7b0c23c2",
+          "md5": "de41a0e865a2c01272be28098087f03e"
+        }
+      ]
+    }
+  ]
+}

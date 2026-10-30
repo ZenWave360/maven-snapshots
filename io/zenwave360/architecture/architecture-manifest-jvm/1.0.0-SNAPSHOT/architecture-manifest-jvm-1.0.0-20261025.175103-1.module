@@ -1,0 +1,140 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../architecture-manifest/1.0.0-SNAPSHOT/architecture-manifest-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "architecture-manifest",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-manifest-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "architecture-manifest-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 365107,
+          "sha512": "8d020ad4085d79478adcb61814ceb899b0aedce0b828a2b984f9f28d67abafbfe0e8b9a5126eee82d964f195115d8c1ae6e66bd290f9fd439cdf26804ba3adf7",
+          "sha256": "f124ff85e68216b7504279cc4ee24293cd0a8bf52ff6d9b08441f0779f8e743b",
+          "sha1": "89d58bf3c89a8ac3db3596c64c463dc83ae5af1d",
+          "md5": "8fd4fc0ad519047f2e4bca02f6e1b587"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common"
+        },
+        {
+          "group": "io.zenwave360.jsonrefparser",
+          "module": "json-schema-ref-parser-kmp",
+          "version": {
+            "requires": "0.9.24"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-manifest-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "architecture-manifest-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 365107,
+          "sha512": "8d020ad4085d79478adcb61814ceb899b0aedce0b828a2b984f9f28d67abafbfe0e8b9a5126eee82d964f195115d8c1ae6e66bd290f9fd439cdf26804ba3adf7",
+          "sha256": "f124ff85e68216b7504279cc4ee24293cd0a8bf52ff6d9b08441f0779f8e743b",
+          "sha1": "89d58bf3c89a8ac3db3596c64c463dc83ae5af1d",
+          "md5": "8fd4fc0ad519047f2e4bca02f6e1b587"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "architecture-manifest-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "url": "architecture-manifest-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "size": 36465,
+          "sha512": "25665da931928dc8a9d006eff70b8cb18ef4b298a291d2132159916233ff834b17b9abd127a0223431cf89746665e9ea0c5ee799db9f888e063671ef99aac3a8",
+          "sha256": "d0be6d55d297e208524cb5cdd5bd2a83a334a0fd6faa0bbfc0fda3321d67c613",
+          "sha1": "ca8daccca02ab2ec7b7f28472d1161bd60e151ab",
+          "md5": "f4bb84dcf64889b89e87fc759fa2edf5"
+        }
+      ]
+    }
+  ]
+}

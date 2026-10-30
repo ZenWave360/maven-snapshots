@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-views/1.11.0-SNAPSHOT/dsl-views-1.11.0-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-views",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 309629,
+          "sha512": "ed3a3485d7a17ed8719ddf227e9bfbe358c3b36f610f310352603e0d6f1b8d07c8ef60add73421fe551430a0670380f06a0aee3c65140a82af8074f7669b38b4",
+          "sha256": "a69dccbdabc1bd7aa1c06af370f6a91d3383b1e67703932fd762826163a936f0",
+          "sha1": "d00f6ed1da7f8a83104726d0b92b6b7966b1b76f",
+          "md5": "eaeec050921b3eece54cca4f619014fd"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 309629,
+          "sha512": "ed3a3485d7a17ed8719ddf227e9bfbe358c3b36f610f310352603e0d6f1b8d07c8ef60add73421fe551430a0670380f06a0aee3c65140a82af8074f7669b38b4",
+          "sha256": "a69dccbdabc1bd7aa1c06af370f6a91d3383b1e67703932fd762826163a936f0",
+          "sha1": "d00f6ed1da7f8a83104726d0b92b6b7966b1b76f",
+          "md5": "eaeec050921b3eece54cca4f619014fd"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "size": 49540,
+          "sha512": "5cf417f4675b10bf9fc934d4b8a8caff5c267c6991041a73898ab3051885b4f8ec5de82fc7cdc84bbfb1c167bc825037dd58322a502c11a7674385a5c3cae08c",
+          "sha256": "09040299f99901911e706ee42723744f2da66512b54dc00c084682aa63a80bff",
+          "sha1": "79d917688bd99fc24cfeaff9fb5e38f21d55b9fc",
+          "md5": "2d5013a93bb6121bc52d04ec36e2fbf6"
+        }
+      ]
+    }
+  ]
+}
