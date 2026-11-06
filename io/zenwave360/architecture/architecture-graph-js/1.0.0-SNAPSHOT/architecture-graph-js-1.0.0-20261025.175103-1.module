@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../architecture-graph/1.0.0-SNAPSHOT/architecture-graph-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "architecture-graph",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-manifest",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-graph-js-1.0.0-SNAPSHOT.klib",
+          "url": "architecture-graph-js-1.0.0-SNAPSHOT.klib",
+          "size": 198291,
+          "sha512": "bad46ffa3abfa5a0eba700e5ab22c47cab3751bde6ee186badd7f458fd060c5141546ee3ce0e6d09cea3efae0c88bb0bcf822c92546c12df1e8df03d805c5298",
+          "sha256": "0907a051f9100e67ab271a215c7fe64634c5a0598db87841f3536dda13bf26f2",
+          "sha1": "c8abd390a4f35f149d666ad1874aa6d8210e1ffe",
+          "md5": "d7aaff59de53057a6bab7ca15b8f56b1"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-manifest",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-graph-js-1.0.0-SNAPSHOT.klib",
+          "url": "architecture-graph-js-1.0.0-SNAPSHOT.klib",
+          "size": 198291,
+          "sha512": "bad46ffa3abfa5a0eba700e5ab22c47cab3751bde6ee186badd7f458fd060c5141546ee3ce0e6d09cea3efae0c88bb0bcf822c92546c12df1e8df03d805c5298",
+          "sha256": "0907a051f9100e67ab271a215c7fe64634c5a0598db87841f3536dda13bf26f2",
+          "sha1": "c8abd390a4f35f149d666ad1874aa6d8210e1ffe",
+          "md5": "d7aaff59de53057a6bab7ca15b8f56b1"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "architecture-graph-js-1.0.0-SNAPSHOT-sources.jar",
+          "url": "architecture-graph-js-1.0.0-SNAPSHOT-sources.jar",
+          "size": 29217,
+          "sha512": "e74f037fefc83586f039720c919a839ace71db02255a7fa659adc1677da741ec7c17e81fc7da9be8ba48e7d671a90d9abb4893ddaa9ad337d79b74f374df6b5b",
+          "sha256": "4c752f7e64594b0bff3f875ea170158b4ddb9e7a535e86d81d24a0650da390fb",
+          "sha1": "2c7ca8f471ecda39ff551e2aab11d40adef038ae",
+          "md5": "430d99a0bb98b1f4c59d05499cbca98f"
+        }
+      ]
+    }
+  ]
+}

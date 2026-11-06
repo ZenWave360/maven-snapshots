@@ -1,0 +1,169 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.architecture",
+    "module": "architecture-manifest",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-manifest-metadata-1.0.0-SNAPSHOT.jar",
+          "url": "architecture-manifest-1.0.0-SNAPSHOT.jar",
+          "size": 20724,
+          "sha512": "6aa0a15860f3d4a657e9bbb17daf5bbd5bd21b89180561e0432fda3334ecb009a35389f80af68a89eb558878efb5cad98c7ab41472502f28bfde057c33af0bf7",
+          "sha256": "d5d40390495eddfb20e3946560e1efa87fb168fb03b41bb6fe548e23b87a20e6",
+          "sha1": "c09c6d6e0cc1f789c133019d92578b9f6ea597ee",
+          "md5": "ab2c14b17b0871982bf189ecf9a37c50"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "architecture-manifest-kotlin-1.0.0-SNAPSHOT-sources.jar",
+          "url": "architecture-manifest-1.0.0-SNAPSHOT-sources.jar",
+          "size": 32786,
+          "sha512": "571f6c8b1a553df9780750205a94c7517eb0149d6296407b0e7e92c24c3f4b934c769a937f97ad6836860f89df3178da87ce3d86052afb04a9c5b57e2ca0085b",
+          "sha256": "4aeaca1a31fba140d33590a118d9946fc6e482b6ad970ac06ba3c77a2f5c939d",
+          "sha1": "e36c97fcf7ceb0a14c8a051950bc2953bf6cbc27",
+          "md5": "8fc08f82f0a74d8c46a921dfbb12cc12"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../architecture-manifest-js/1.0.0-SNAPSHOT/architecture-manifest-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "architecture-manifest-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../architecture-manifest-js/1.0.0-SNAPSHOT/architecture-manifest-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "architecture-manifest-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../architecture-manifest-js/1.0.0-SNAPSHOT/architecture-manifest-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "architecture-manifest-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../architecture-manifest-jvm/1.0.0-SNAPSHOT/architecture-manifest-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "architecture-manifest-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../architecture-manifest-jvm/1.0.0-SNAPSHOT/architecture-manifest-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "architecture-manifest-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../architecture-manifest-jvm/1.0.0-SNAPSHOT/architecture-manifest-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "architecture-manifest-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    }
+  ]
+}

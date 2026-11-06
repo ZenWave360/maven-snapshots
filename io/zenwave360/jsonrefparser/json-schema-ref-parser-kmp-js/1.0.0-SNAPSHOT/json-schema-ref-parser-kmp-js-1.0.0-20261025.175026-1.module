@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../json-schema-ref-parser-kmp/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.jsonrefparser",
+    "module": "json-schema-ref-parser-kmp",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.klib",
+          "url": "json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.klib",
+          "size": 106490,
+          "sha512": "9d56a8f3216dcb2579fa2c7570c706c26e9c494a30d6c5b7503aa4db80567e9454b264acade7f747b406b1851d92f150adae4951349746054409c0a98a379392",
+          "sha256": "3845e24b2e5a76c34f8c34b577670d93d78a791cc028fa9ce219b8b6f5ff3a4a",
+          "sha1": "2fec612ff94ac64c945d1472cc1bc35e912850de",
+          "md5": "2eea7f2cc4bb2481300fcb5e53c326fb"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        },
+        {
+          "group": "it.krzeminski",
+          "module": "snakeyaml-engine-kmp",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.klib",
+          "url": "json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.klib",
+          "size": 106490,
+          "sha512": "9d56a8f3216dcb2579fa2c7570c706c26e9c494a30d6c5b7503aa4db80567e9454b264acade7f747b406b1851d92f150adae4951349746054409c0a98a379392",
+          "sha256": "3845e24b2e5a76c34f8c34b577670d93d78a791cc028fa9ce219b8b6f5ff3a4a",
+          "sha1": "2fec612ff94ac64c945d1472cc1bc35e912850de",
+          "md5": "2eea7f2cc4bb2481300fcb5e53c326fb"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT-sources.jar",
+          "url": "json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT-sources.jar",
+          "size": 24475,
+          "sha512": "a37910fd2d43cf1a6036e407d94df449376da31e1abded262ca96857c3b7579090994cc31933c47e32b64f020e71dd87b2437a3456a2f02267feda830eafb71f",
+          "sha256": "711eab5bde512e29fc2257699680dc0deeebbeaf41b836a57092a17dfbf5c0ef",
+          "sha1": "1c3746c3dc0242699736ed9b497bdf1101f5d43f",
+          "md5": "616634e771c37753bef9371383eb94fa"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../architecture-manifest/1.0.0-SNAPSHOT/architecture-manifest-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "architecture-manifest",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-manifest-js-1.0.0-SNAPSHOT.klib",
+          "url": "architecture-manifest-js-1.0.0-SNAPSHOT.klib",
+          "size": 267511,
+          "sha512": "bf19009885c45bb2964ae90fd55d3334cfc464c638f5d635ccffa3416ede05cb4dbea1681b41394cae8013333fb7265f5eb8f05dbd24078d3f716ccf7e7cdb65",
+          "sha256": "657dc7de2004a87af71760fc0f0e203884f3d570b47177f4d7e8d25d9ec83bc8",
+          "sha1": "9dac438c1552ac86cd453555e9a35f645505ec90",
+          "md5": "c9888a1105e4b49b92f79bc14d12d702"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common"
+        },
+        {
+          "group": "io.zenwave360.jsonrefparser",
+          "module": "json-schema-ref-parser-kmp",
+          "version": {
+            "requires": "0.9.24"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-manifest-js-1.0.0-SNAPSHOT.klib",
+          "url": "architecture-manifest-js-1.0.0-SNAPSHOT.klib",
+          "size": 267511,
+          "sha512": "bf19009885c45bb2964ae90fd55d3334cfc464c638f5d635ccffa3416ede05cb4dbea1681b41394cae8013333fb7265f5eb8f05dbd24078d3f716ccf7e7cdb65",
+          "sha256": "657dc7de2004a87af71760fc0f0e203884f3d570b47177f4d7e8d25d9ec83bc8",
+          "sha1": "9dac438c1552ac86cd453555e9a35f645505ec90",
+          "md5": "c9888a1105e4b49b92f79bc14d12d702"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "architecture-manifest-js-1.0.0-SNAPSHOT-sources.jar",
+          "url": "architecture-manifest-js-1.0.0-SNAPSHOT-sources.jar",
+          "size": 34159,
+          "sha512": "0328bed6ef4640ee9beb85be7b19a9ecbb802e86a77e50894405cdc5e23c84efea6ba7e9e08b5599fe1cb6a99a91c187d9d9efe7e22f4f7e351bd100d717b8e6",
+          "sha256": "89fd9563a48a4f734d25e88bc80487667629e097babf4cb89706e36edf1df4fd",
+          "sha1": "38ef121859a95640a1b382121eebf2b5f4a5f785",
+          "md5": "6aeb2194c6e3cd21b904f549ecbd95b5"
+        }
+      ]
+    }
+  ]
+}
