@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../architecture-graph/1.0.0-SNAPSHOT/architecture-graph-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "architecture-graph",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-manifest",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-graph-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "architecture-graph-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 196016,
+          "sha512": "7487db0fa1628adc1eb0d2bbc985d4e36ac60731f3e169f20d1fc83242486950ed608e2185aadc2b5b529c5b0f72471d5ca907cbce2f9490a1c7199b42bddea2",
+          "sha256": "d009fc182c02e7edcc6c56992e7b49c2d441fc1b1b8e672948de0b1ce13e9b7d",
+          "sha1": "21c1259b24ccb9501ab114e5f18f20864fc75734",
+          "md5": "740bee0b64e1dcb986480ccfea95b9c8"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-manifest",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8"
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "architecture-graph-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "architecture-graph-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 196016,
+          "sha512": "7487db0fa1628adc1eb0d2bbc985d4e36ac60731f3e169f20d1fc83242486950ed608e2185aadc2b5b529c5b0f72471d5ca907cbce2f9490a1c7199b42bddea2",
+          "sha256": "d009fc182c02e7edcc6c56992e7b49c2d441fc1b1b8e672948de0b1ce13e9b7d",
+          "sha1": "21c1259b24ccb9501ab114e5f18f20864fc75734",
+          "md5": "740bee0b64e1dcb986480ccfea95b9c8"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "architecture-graph-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "url": "architecture-graph-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "size": 30456,
+          "sha512": "2d1c61cd7e66290fb541c4c523cd0c4cc17174355c9987553d2f951ab42d4eb54c087e52e4f2a2291dcde1c77fe69e08a16a3290347c114e6492545c15ae5f41",
+          "sha256": "804eb2baa4f046f9407a42a02fca46f306144a3645af96e3efacc2b6d6ce1cfe",
+          "sha1": "426ce838d1c05cd0e2d4fab4dd6bd4637f7eb7e7",
+          "md5": "7a6213ced968d96f523233ab51aed3f5"
+        }
+      ]
+    }
+  ]
+}

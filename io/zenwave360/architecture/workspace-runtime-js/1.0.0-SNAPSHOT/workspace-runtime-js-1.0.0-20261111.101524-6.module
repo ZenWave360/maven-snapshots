@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../workspace-runtime/1.0.0-SNAPSHOT/workspace-runtime-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "workspace-runtime",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-graph",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-runtime-js-1.0.0-SNAPSHOT.klib",
+          "url": "workspace-runtime-js-1.0.0-SNAPSHOT.klib",
+          "size": 43067,
+          "sha512": "27016359ea9baaf8e04eab233d8f271edb0fb94d1b9bdf4ecb1fd9d37ad2bc328bf0a5ebbc6497f50d780a5d2adc7a7d9d8a7b63b9c988939a0b0f0691d2dccb",
+          "sha256": "0925a702fb10e829141bcc1c39b586b367f5362cc8e8ef2c1ec11231ced4aa2e",
+          "sha1": "7b4ec05a6cf181620c622d53822bb6c50afa9d5f",
+          "md5": "a15c98aae4077fc5e3ea7fc9011f4bb6"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-graph",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-runtime-js-1.0.0-SNAPSHOT.klib",
+          "url": "workspace-runtime-js-1.0.0-SNAPSHOT.klib",
+          "size": 43067,
+          "sha512": "27016359ea9baaf8e04eab233d8f271edb0fb94d1b9bdf4ecb1fd9d37ad2bc328bf0a5ebbc6497f50d780a5d2adc7a7d9d8a7b63b9c988939a0b0f0691d2dccb",
+          "sha256": "0925a702fb10e829141bcc1c39b586b367f5362cc8e8ef2c1ec11231ced4aa2e",
+          "sha1": "7b4ec05a6cf181620c622d53822bb6c50afa9d5f",
+          "md5": "a15c98aae4077fc5e3ea7fc9011f4bb6"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "workspace-runtime-js-1.0.0-SNAPSHOT-sources.jar",
+          "url": "workspace-runtime-js-1.0.0-SNAPSHOT-sources.jar",
+          "size": 5403,
+          "sha512": "313abbfe257330abe7a8eafbcb30af5766c2db72394042127bc31e17d569a8a5117aba40f97cc8159e824244c1ae9eb00f7766ad9a0e1505a2825885ee2a2988",
+          "sha256": "6ec216721e9aaf4bac2d02efbaaadfe1dd1ec47a2f9b5d7e5a0f775138387700",
+          "sha1": "67c51f18302ffc7f59b3239c3324e250de51ad34",
+          "md5": "274e1aef6fd121716899515ad17e80a5"
+        }
+      ]
+    }
+  ]
+}

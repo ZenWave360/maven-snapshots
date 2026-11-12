@@ -1,0 +1,203 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../lsp-core/0.1.0-SNAPSHOT/lsp-core-0.1.0-SNAPSHOT.module",
+    "group": "io.zenwave360.language",
+    "module": "lsp-core",
+    "version": "0.1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lsp-core-js-0.1.0-SNAPSHOT.klib",
+          "url": "lsp-core-js-0.1.0-SNAPSHOT.klib",
+          "size": 631499,
+          "sha512": "5d154f1b01420dd588f64a92611cfa5cc6e46c94f2b0f028846bb5c30edb44b76875a5645263ad2ca44f852e9f178d80ed5b4c609cc87b7ea356360f181976ad",
+          "sha256": "81c2d5f324be451e72961e1db3bb97b6d0cb06de6825c645189380af7d4fc430",
+          "sha1": "1b1b6115ec22e41b9133dd3d1acc45d4f28ee053",
+          "md5": "9eef2dfdb5f3311df43e1a0ee673500b"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common"
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-views",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-docs",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.jsonrefparser",
+          "module": "json-schema-ref-parser-kmp",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-manifest",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.strumenta",
+          "module": "antlr-kotlin-runtime",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-js",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lsp-core-js-0.1.0-SNAPSHOT.klib",
+          "url": "lsp-core-js-0.1.0-SNAPSHOT.klib",
+          "size": 631499,
+          "sha512": "5d154f1b01420dd588f64a92611cfa5cc6e46c94f2b0f028846bb5c30edb44b76875a5645263ad2ca44f852e9f178d80ed5b4c609cc87b7ea356360f181976ad",
+          "sha256": "81c2d5f324be451e72961e1db3bb97b6d0cb06de6825c645189380af7d4fc430",
+          "sha1": "1b1b6115ec22e41b9133dd3d1acc45d4f28ee053",
+          "md5": "9eef2dfdb5f3311df43e1a0ee673500b"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "lsp-core-js-0.1.0-SNAPSHOT-sources.jar",
+          "url": "lsp-core-js-0.1.0-SNAPSHOT-sources.jar",
+          "size": 126617,
+          "sha512": "455d14a437e14d9e69bdbb388b056589e7ce726a31c3b877a16aeef987eb71a03c17cb6e16ce1de6b76d8de02eae1157e840868016ba83c3f28e7c020fc1feea",
+          "sha256": "f298aa0e2a5c9603f5f37652f65c774883785bc8a155dd5c5512ac56f3d3dc10",
+          "sha1": "ac2a1066d8bfdff912a6e2c9b087f3fb61c72ee1",
+          "md5": "c47a966e9da0587a7762afbfee507498"
+        }
+      ]
+    }
+  ]
+}

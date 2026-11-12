@@ -1,0 +1,196 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../lsp-core/0.1.0-SNAPSHOT/lsp-core-0.1.0-SNAPSHOT.module",
+    "group": "io.zenwave360.language",
+    "module": "lsp-core",
+    "version": "0.1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lsp-core-jvm-0.1.0-SNAPSHOT.jar",
+          "url": "lsp-core-jvm-0.1.0-SNAPSHOT.jar",
+          "size": 661922,
+          "sha512": "68a2a8e471ac8e21e6e75c77315e26c956b415a0077a68826ad8c5b6ce4857fac62853c206e9b6fbdf4efe47aba6b0708a1f9201bce358e509ecaeedac4013b3",
+          "sha256": "69a4fc3728bbbef36fc739261a7d69a45e456f33d09cf234273a6ad1b8700a1b",
+          "sha1": "70da2e4ea4abc4b833631e486530245c4c93eb80",
+          "md5": "825d573300fb40386b83f6f3158b85fa"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.eclipse.elk",
+          "module": "org.eclipse.elk.alg.layered",
+          "version": {
+            "requires": "0.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common"
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-views",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-docs",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.jsonrefparser",
+          "module": "json-schema-ref-parser-kmp",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-manifest",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.strumenta",
+          "module": "antlr-kotlin-runtime",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lsp-core-jvm-0.1.0-SNAPSHOT.jar",
+          "url": "lsp-core-jvm-0.1.0-SNAPSHOT.jar",
+          "size": 661922,
+          "sha512": "68a2a8e471ac8e21e6e75c77315e26c956b415a0077a68826ad8c5b6ce4857fac62853c206e9b6fbdf4efe47aba6b0708a1f9201bce358e509ecaeedac4013b3",
+          "sha256": "69a4fc3728bbbef36fc739261a7d69a45e456f33d09cf234273a6ad1b8700a1b",
+          "sha1": "70da2e4ea4abc4b833631e486530245c4c93eb80",
+          "md5": "825d573300fb40386b83f6f3158b85fa"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "lsp-core-jvm-0.1.0-SNAPSHOT-sources.jar",
+          "url": "lsp-core-jvm-0.1.0-SNAPSHOT-sources.jar",
+          "size": 138470,
+          "sha512": "cfc6d98f680da3919609a98e448cc05f590497b967b747e97bfbd648b8a6a78881b1fda28f07a5e83c4d120856b0b4ef4b5494215b5d6704ec56e4d547c2092f",
+          "sha256": "87cc6ef58896be584bc1f94b9a126fcd8cec82483306fab80bd2e685c5ab4ee3",
+          "sha1": "63da0cac0bf3e4caedf8d8cf27de165d7311f9a2",
+          "md5": "1179df40e3b34947518846ba21561e5d"
+        }
+      ]
+    }
+  ]
+}
