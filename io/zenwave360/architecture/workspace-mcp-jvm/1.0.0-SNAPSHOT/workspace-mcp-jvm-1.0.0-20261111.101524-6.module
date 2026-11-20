@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../workspace-mcp/1.0.0-SNAPSHOT/workspace-mcp-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "workspace-mcp",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-mcp-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "workspace-mcp-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 32597,
+          "sha512": "e45ca29913365483f509fb99b33416d4769684e963be927e58009aba28861cc7664545197082c6f14d049f0acd7f8dabfb11b37a94c67f632724f4484b307408",
+          "sha256": "3fbc23e5890ec2d24e89827ccf7e401467d578740df18d47f5d861c3f73c757f",
+          "sha1": "dd20e41ac75987796d18327eb3503d4fdd4f7ce3",
+          "md5": "d6e88a910e40c5a9c66fe8a67670d847"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-mcp-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "workspace-mcp-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 32597,
+          "sha512": "e45ca29913365483f509fb99b33416d4769684e963be927e58009aba28861cc7664545197082c6f14d049f0acd7f8dabfb11b37a94c67f632724f4484b307408",
+          "sha256": "3fbc23e5890ec2d24e89827ccf7e401467d578740df18d47f5d861c3f73c757f",
+          "sha1": "dd20e41ac75987796d18327eb3503d4fdd4f7ce3",
+          "md5": "d6e88a910e40c5a9c66fe8a67670d847"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "workspace-mcp-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "url": "workspace-mcp-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "size": 4227,
+          "sha512": "6ea92a4664651266cbbb8a01b87161315357758f4768cb060ed0365190a344c2bb0e8922e1b96a7ab660b22de83c65997bac0ff7be6bb8dcb460206a783a9900",
+          "sha256": "54233de96d71daa56dfd1c30b40c1c494f60b014c0fcb4281da75a61431bff84",
+          "sha1": "b1208a8a87cccdd5475840f2124a166a4541beeb",
+          "md5": "eec40857c6cdf820072eb668df8df617"
+        }
+      ]
+    }
+  ]
+}

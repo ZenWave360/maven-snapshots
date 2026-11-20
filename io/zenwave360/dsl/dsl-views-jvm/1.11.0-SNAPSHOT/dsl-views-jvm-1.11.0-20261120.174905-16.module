@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-views/1.11.0-SNAPSHOT/dsl-views-1.11.0-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-views",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 288250,
+          "sha512": "02d396614fc547357bd93e912cacac1d96e97e194efda71402523665a4a4993039f05a9df0b6ce0d32f29398fee9cf4293db66352da1e6e2f740b6f1d5b4b1ba",
+          "sha256": "7ebf87e91ea400aa4582ad55e729c3226017cc51bd8281f42c16d60defa48e8a",
+          "sha1": "7f49083d145083994283c1bd5fde10e0dd5e0cff",
+          "md5": "f4cd67c8a858ee89e1dc1e1786397209"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 288250,
+          "sha512": "02d396614fc547357bd93e912cacac1d96e97e194efda71402523665a4a4993039f05a9df0b6ce0d32f29398fee9cf4293db66352da1e6e2f740b6f1d5b4b1ba",
+          "sha256": "7ebf87e91ea400aa4582ad55e729c3226017cc51bd8281f42c16d60defa48e8a",
+          "sha1": "7f49083d145083994283c1bd5fde10e0dd5e0cff",
+          "md5": "f4cd67c8a858ee89e1dc1e1786397209"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "size": 50226,
+          "sha512": "78116b402030aab25a9b7a1e4af6eda818079b004ee4841d12d231e37d7743332d9953274f94492ded515ca422114a95e36794527ed7b2321d0e6be2cf37a72c",
+          "sha256": "581605cb2144a6913afdc1a79612d56b97411a02bb5c65d5744bfe0c10ac5c60",
+          "sha1": "c2bd528cacf1e51ebdbafd53deef72c8a8462f9c",
+          "md5": "675a1184fd91c54ad6274f866df9daf2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-kotlin",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-kotlin-metadata-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-kotlin-1.11.0-SNAPSHOT.jar",
+          "size": 121349,
+          "sha512": "25118e29217b61af5669cd521309897897777909afccfcc19fcd388aff7679e4a095a7b953db418bb11d0c09803fd4d5f9860264f5e58ec03fd3f6b7b4835b61",
+          "sha256": "ed0848a57b81cb365bd85590eac34cec295810b2321127513b3750aecd901581",
+          "sha1": "8928c4cf1c59bb95d10d868bf0ce0bc4e9f37448",
+          "md5": "962a82d01dace4e146c6d8227166cacc"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "dsl-kotlin-kotlin-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-kotlin-1.11.0-SNAPSHOT-sources.jar",
+          "size": 199474,
+          "sha512": "bf6a84e47369fbd74de1009d789620d6507d08a8835b28870f386979d58a48639822d63e0dd0a9cecc815ec5aff0586b00a721232dfd6c64ad236e4526e8335d",
+          "sha256": "f19930837e842c41eb9bbaf7133b4fd17f09860f3f5673fd348e92ae0caed602",
+          "sha1": "e07ff6cdb42fcfcfb80858c46111608c069fd6ff",
+          "md5": "a68e4d9e02f4e813b3a9b3dc8b5b8d4e"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../dsl-kotlin-js/1.11.0-SNAPSHOT/dsl-kotlin-js-1.11.0-SNAPSHOT.module",
+        "group": "io.zenwave360.dsl",
+        "module": "dsl-kotlin-js",
+        "version": "1.11.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../dsl-kotlin-js/1.11.0-SNAPSHOT/dsl-kotlin-js-1.11.0-SNAPSHOT.module",
+        "group": "io.zenwave360.dsl",
+        "module": "dsl-kotlin-js",
+        "version": "1.11.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../dsl-kotlin-js/1.11.0-SNAPSHOT/dsl-kotlin-js-1.11.0-SNAPSHOT.module",
+        "group": "io.zenwave360.dsl",
+        "module": "dsl-kotlin-js",
+        "version": "1.11.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../dsl-kotlin-jvm/1.11.0-SNAPSHOT/dsl-kotlin-jvm-1.11.0-SNAPSHOT.module",
+        "group": "io.zenwave360.dsl",
+        "module": "dsl-kotlin-jvm",
+        "version": "1.11.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../dsl-kotlin-jvm/1.11.0-SNAPSHOT/dsl-kotlin-jvm-1.11.0-SNAPSHOT.module",
+        "group": "io.zenwave360.dsl",
+        "module": "dsl-kotlin-jvm",
+        "version": "1.11.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../dsl-kotlin-jvm/1.11.0-SNAPSHOT/dsl-kotlin-jvm-1.11.0-SNAPSHOT.module",
+        "group": "io.zenwave360.dsl",
+        "module": "dsl-kotlin-jvm",
+        "version": "1.11.0-SNAPSHOT"
+      }
+    }
+  ]
+}

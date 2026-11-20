@@ -1,0 +1,169 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.jsonrefparser",
+    "module": "json-schema-ref-parser-kmp",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "json-schema-ref-parser-kmp-metadata-1.0.0-SNAPSHOT.jar",
+          "url": "json-schema-ref-parser-kmp-1.0.0-SNAPSHOT.jar",
+          "size": 14357,
+          "sha512": "ae4add62c546e12c110ff9729b76eca00a0ccc22e2ab4d505a5f58889e6ee827adc0b4fa77225873ee06da5fb118fb36a4ae00621c936197c4d395c769815f8c",
+          "sha256": "c08ef5c1e74bc71f7d8d42d3496e4f7386edbe305b266be4f4ce7d13ec66a88f",
+          "sha1": "3ae3860e7711b7feff73a00416e63c412ba24c72",
+          "md5": "01bce728fa7980e37c4aa183115f37ef"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "json-schema-ref-parser-kmp-kotlin-1.0.0-SNAPSHOT-sources.jar",
+          "url": "json-schema-ref-parser-kmp-1.0.0-SNAPSHOT-sources.jar",
+          "size": 18996,
+          "sha512": "c5fa0280ef973c07436d0b02d1729e9cc14dc2c53384fed872bcb2247b166ace9977b6a28d2d3d2012fc42640c987b69a9c055e171077fec7855e552a13d3a79",
+          "sha256": "54d2fa23ace1b11f6066c58dd51657399b3244962b9c4df52f24bd4b11e46847",
+          "sha1": "f4da5571802e429f936f335a985baf7880fe5f6d",
+          "md5": "2734bc0cda1114b25c206b9cffbfd00a"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../json-schema-ref-parser-kmp-js/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.jsonrefparser",
+        "module": "json-schema-ref-parser-kmp-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../json-schema-ref-parser-kmp-js/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.jsonrefparser",
+        "module": "json-schema-ref-parser-kmp-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../json-schema-ref-parser-kmp-js/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.jsonrefparser",
+        "module": "json-schema-ref-parser-kmp-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../json-schema-ref-parser-kmp-jvm/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.jsonrefparser",
+        "module": "json-schema-ref-parser-kmp-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../json-schema-ref-parser-kmp-jvm/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.jsonrefparser",
+        "module": "json-schema-ref-parser-kmp-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../json-schema-ref-parser-kmp-jvm/1.0.0-SNAPSHOT/json-schema-ref-parser-kmp-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.jsonrefparser",
+        "module": "json-schema-ref-parser-kmp-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    }
+  ]
+}

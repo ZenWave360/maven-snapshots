@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../workspace-mcp/1.0.0-SNAPSHOT/workspace-mcp-1.0.0-SNAPSHOT.module",
+    "group": "io.zenwave360.architecture",
+    "module": "workspace-mcp",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-mcp-js-1.0.0-SNAPSHOT.klib",
+          "url": "workspace-mcp-js-1.0.0-SNAPSHOT.klib",
+          "size": 29741,
+          "sha512": "3ff4dd67ce04461b3876be948eef152c137cb9784cc59f644a0be8dfb8a10fe9c31eb7f98886e092bbd2243fc44281cc4443a9957ba4817d262ee1325e887b2d",
+          "sha256": "b4fe154fc319c039b3c9a59752bd24d0335ccc75c2bf5ba7c04b37db51f54086",
+          "sha1": "95506268e1bea5c2fa52eb290443e649b1545729",
+          "md5": "59d68e6dda0cf62d5ed993330b96cdaa"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-mcp-js-1.0.0-SNAPSHOT.klib",
+          "url": "workspace-mcp-js-1.0.0-SNAPSHOT.klib",
+          "size": 29741,
+          "sha512": "3ff4dd67ce04461b3876be948eef152c137cb9784cc59f644a0be8dfb8a10fe9c31eb7f98886e092bbd2243fc44281cc4443a9957ba4817d262ee1325e887b2d",
+          "sha256": "b4fe154fc319c039b3c9a59752bd24d0335ccc75c2bf5ba7c04b37db51f54086",
+          "sha1": "95506268e1bea5c2fa52eb290443e649b1545729",
+          "md5": "59d68e6dda0cf62d5ed993330b96cdaa"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "workspace-mcp-js-1.0.0-SNAPSHOT-sources.jar",
+          "url": "workspace-mcp-js-1.0.0-SNAPSHOT-sources.jar",
+          "size": 4227,
+          "sha512": "6ea92a4664651266cbbb8a01b87161315357758f4768cb060ed0365190a344c2bb0e8922e1b96a7ab660b22de83c65997bac0ff7be6bb8dcb460206a783a9900",
+          "sha256": "54233de96d71daa56dfd1c30b40c1c494f60b014c0fcb4281da75a61431bff84",
+          "sha1": "b1208a8a87cccdd5475840f2124a166a4541beeb",
+          "md5": "eec40857c6cdf820072eb668df8df617"
+        }
+      ]
+    }
+  ]
+}

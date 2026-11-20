@@ -1,0 +1,176 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.architecture",
+    "module": "workspace-mcp",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "workspace-runtime",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-mcp-metadata-1.0.0-SNAPSHOT.jar",
+          "url": "workspace-mcp-1.0.0-SNAPSHOT.jar",
+          "size": 3215,
+          "sha512": "6b84269346cc491f001b2a1fd66c02aba1eb764b1dfc1c4b708036e0e79ce6d746dd97bb2efea06baf6f53481aee81acdd68e1a600a4448b8cb8b1f03e1e7c3d",
+          "sha256": "4afd48950d6bcd804edf1ccebf8ecb07cfcf19457248e49641722410eb51379b",
+          "sha1": "7079e2942f3cb6d757a39447694b05d390c2bd4f",
+          "md5": "df9087950ff40cd7ea5e19c97a7bb03a"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "workspace-mcp-kotlin-1.0.0-SNAPSHOT-sources.jar",
+          "url": "workspace-mcp-1.0.0-SNAPSHOT-sources.jar",
+          "size": 4227,
+          "sha512": "6ea92a4664651266cbbb8a01b87161315357758f4768cb060ed0365190a344c2bb0e8922e1b96a7ab660b22de83c65997bac0ff7be6bb8dcb460206a783a9900",
+          "sha256": "54233de96d71daa56dfd1c30b40c1c494f60b014c0fcb4281da75a61431bff84",
+          "sha1": "b1208a8a87cccdd5475840f2124a166a4541beeb",
+          "md5": "eec40857c6cdf820072eb668df8df617"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../workspace-mcp-js/1.0.0-SNAPSHOT/workspace-mcp-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-mcp-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../workspace-mcp-js/1.0.0-SNAPSHOT/workspace-mcp-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-mcp-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../workspace-mcp-js/1.0.0-SNAPSHOT/workspace-mcp-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-mcp-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../workspace-mcp-jvm/1.0.0-SNAPSHOT/workspace-mcp-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-mcp-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../workspace-mcp-jvm/1.0.0-SNAPSHOT/workspace-mcp-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-mcp-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../workspace-mcp-jvm/1.0.0-SNAPSHOT/workspace-mcp-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-mcp-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    }
+  ]
+}

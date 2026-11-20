@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-views/1.11.0-SNAPSHOT/dsl-views-1.11.0-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-views",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-js-1.11.0-SNAPSHOT.klib",
+          "url": "dsl-views-js-1.11.0-SNAPSHOT.klib",
+          "size": 305363,
+          "sha512": "406967686199fc51a49976e9519bcf056ceb6a14ed5eb9a30445afa1ebbfd59a6d25eee030acda415524dcfc9ccd7d5b2a3a9174331a0d04abb38209d2aacfd7",
+          "sha256": "845ac8343bcdd6b75870b8148a8b7f6b25716374a2433eee796b9ba9dd997e53",
+          "sha1": "74f7ea7293e0de23fc1e433588d16feaf991ee9c",
+          "md5": "23f4615cbcb9f482851df2fb560b1fa7"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-js-1.11.0-SNAPSHOT.klib",
+          "url": "dsl-views-js-1.11.0-SNAPSHOT.klib",
+          "size": 305363,
+          "sha512": "406967686199fc51a49976e9519bcf056ceb6a14ed5eb9a30445afa1ebbfd59a6d25eee030acda415524dcfc9ccd7d5b2a3a9174331a0d04abb38209d2aacfd7",
+          "sha256": "845ac8343bcdd6b75870b8148a8b7f6b25716374a2433eee796b9ba9dd997e53",
+          "sha1": "74f7ea7293e0de23fc1e433588d16feaf991ee9c",
+          "md5": "23f4615cbcb9f482851df2fb560b1fa7"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "dsl-views-js-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-views-js-1.11.0-SNAPSHOT-sources.jar",
+          "size": 50903,
+          "sha512": "e2d2d54a10819f0252c7aa4a05c6622c1c0b37a68e1b224091701892c67055452ec791d4204333be286d2579a3965689706ee18ee52a5ba9719537259c3d2275",
+          "sha256": "4c3af4016ba5267f983d33ab544008ff953ed06424c6793f0eb76030aae92d58",
+          "sha1": "d9defdcf334b7c6a86f0cd0064d1de14256b9d83",
+          "md5": "918c5c602a5500357f78fa4c7e543fef"
+        }
+      ]
+    }
+  ]
+}

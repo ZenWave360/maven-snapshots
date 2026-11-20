@@ -1,0 +1,169 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.language",
+    "module": "lsp-core",
+    "version": "0.1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lsp-core-metadata-0.1.0-SNAPSHOT.jar",
+          "url": "lsp-core-0.1.0-SNAPSHOT.jar",
+          "size": 77997,
+          "sha512": "37b2a872dbdb35f3dc602765e3fbe21b521cd1033f9660dba5b9a95e94f1398cb526482de07fe099819d561c2cc130159f88d1ba2ac79d76574e980b3e28fbd3",
+          "sha256": "e01be7a1e361414307146637698e48a0d39605096af86dfaf9a4f248ca32c8fb",
+          "sha1": "3b718b38dc16a3a983a1f33a6d91435aff233852",
+          "md5": "1acc338ef230396c6d3830c3a348182b"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "lsp-core-kotlin-0.1.0-SNAPSHOT-sources.jar",
+          "url": "lsp-core-0.1.0-SNAPSHOT-sources.jar",
+          "size": 132869,
+          "sha512": "4ec06be58f8046008c5217294b104f0632c47b1b734febfdba25f211b3415d3bc0f19a02deb68267a29aaebe9f4bafc387104af686a5cbacb5fe5675a6241f50",
+          "sha256": "387200310a2502372e404c3e22b4de5ce9770f66af055451272e6898f7d06216",
+          "sha1": "8d6c26dc0ad11ac97c141bfb1a586185bcab8e3d",
+          "md5": "ec9a1548dc97df68d9d490e2afddb5ea"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../lsp-core-js/0.1.0-SNAPSHOT/lsp-core-js-0.1.0-SNAPSHOT.module",
+        "group": "io.zenwave360.language",
+        "module": "lsp-core-js",
+        "version": "0.1.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../lsp-core-js/0.1.0-SNAPSHOT/lsp-core-js-0.1.0-SNAPSHOT.module",
+        "group": "io.zenwave360.language",
+        "module": "lsp-core-js",
+        "version": "0.1.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../lsp-core-js/0.1.0-SNAPSHOT/lsp-core-js-0.1.0-SNAPSHOT.module",
+        "group": "io.zenwave360.language",
+        "module": "lsp-core-js",
+        "version": "0.1.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../lsp-core-jvm/0.1.0-SNAPSHOT/lsp-core-jvm-0.1.0-SNAPSHOT.module",
+        "group": "io.zenwave360.language",
+        "module": "lsp-core-jvm",
+        "version": "0.1.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../lsp-core-jvm/0.1.0-SNAPSHOT/lsp-core-jvm-0.1.0-SNAPSHOT.module",
+        "group": "io.zenwave360.language",
+        "module": "lsp-core-jvm",
+        "version": "0.1.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../lsp-core-jvm/0.1.0-SNAPSHOT/lsp-core-jvm-0.1.0-SNAPSHOT.module",
+        "group": "io.zenwave360.language",
+        "module": "lsp-core-jvm",
+        "version": "0.1.0-SNAPSHOT"
+      }
+    }
+  ]
+}

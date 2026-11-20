@@ -1,0 +1,176 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.architecture",
+    "module": "workspace-runtime",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.architecture",
+          "module": "architecture-graph",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "workspace-runtime-metadata-1.0.0-SNAPSHOT.jar",
+          "url": "workspace-runtime-1.0.0-SNAPSHOT.jar",
+          "size": 5710,
+          "sha512": "8fe14b1836a1bb746ef3652f7c618fed0a020cf1ed91d11b13c78ad1a675a6c6d842033934a193adf180ea0439d41c63238e08017b2022608ee1806aa119c90b",
+          "sha256": "e7fd343f86f4675f0e4e38181b68f66cc18f78f47a39de8628d72d353631702b",
+          "sha1": "bec28d14a9cf81e953bbfb9f5603d1d9564ee07e",
+          "md5": "d22f6d01c48fe6d4515456cbf50442af"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "workspace-runtime-kotlin-1.0.0-SNAPSHOT-sources.jar",
+          "url": "workspace-runtime-1.0.0-SNAPSHOT-sources.jar",
+          "size": 5403,
+          "sha512": "313abbfe257330abe7a8eafbcb30af5766c2db72394042127bc31e17d569a8a5117aba40f97cc8159e824244c1ae9eb00f7766ad9a0e1505a2825885ee2a2988",
+          "sha256": "6ec216721e9aaf4bac2d02efbaaadfe1dd1ec47a2f9b5d7e5a0f775138387700",
+          "sha1": "67c51f18302ffc7f59b3239c3324e250de51ad34",
+          "md5": "274e1aef6fd121716899515ad17e80a5"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../workspace-runtime-js/1.0.0-SNAPSHOT/workspace-runtime-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-runtime-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../workspace-runtime-js/1.0.0-SNAPSHOT/workspace-runtime-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-runtime-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../workspace-runtime-js/1.0.0-SNAPSHOT/workspace-runtime-js-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-runtime-js",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../workspace-runtime-jvm/1.0.0-SNAPSHOT/workspace-runtime-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-runtime-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../workspace-runtime-jvm/1.0.0-SNAPSHOT/workspace-runtime-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-runtime-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../workspace-runtime-jvm/1.0.0-SNAPSHOT/workspace-runtime-jvm-1.0.0-SNAPSHOT.module",
+        "group": "io.zenwave360.architecture",
+        "module": "workspace-runtime-jvm",
+        "version": "1.0.0-SNAPSHOT"
+      }
+    }
+  ]
+}
