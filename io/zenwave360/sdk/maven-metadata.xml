@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>io.zenwave360.sdk:zenwave-sdk-maven-plugin</name>
+      <prefix>zenwave-sdk</prefix>
+      <artifactId>zenwave-sdk-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

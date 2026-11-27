@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-docs/1.11.0-SNAPSHOT/dsl-docs-1.11.0-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-docs",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-views",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-docs-js-1.11.0-SNAPSHOT.klib",
+          "url": "dsl-docs-js-1.11.0-SNAPSHOT.klib",
+          "size": 274025,
+          "sha512": "9d719db6ec969d0c3008791b9968d76c5a8b53d7d91d7d5859dc08c66f180706395cb32ff335293c70e88cac7b517859e27dbfacb24b1a005bcc72b64a7fc5e0",
+          "sha256": "0906bcad3fd2c6223540ed67d13316d6f744dd4a5faa5f46e5538076cc564dfe",
+          "sha1": "10b0e76486f5a5657f9517f02ff801265ee3b36f",
+          "md5": "bb340ab851ccba78f467727532263558"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-views",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "it.krzeminski",
+          "module": "snakeyaml-engine-kmp",
+          "version": {
+            "requires": "4.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-docs-js-1.11.0-SNAPSHOT.klib",
+          "url": "dsl-docs-js-1.11.0-SNAPSHOT.klib",
+          "size": 274025,
+          "sha512": "9d719db6ec969d0c3008791b9968d76c5a8b53d7d91d7d5859dc08c66f180706395cb32ff335293c70e88cac7b517859e27dbfacb24b1a005bcc72b64a7fc5e0",
+          "sha256": "0906bcad3fd2c6223540ed67d13316d6f744dd4a5faa5f46e5538076cc564dfe",
+          "sha1": "10b0e76486f5a5657f9517f02ff801265ee3b36f",
+          "md5": "bb340ab851ccba78f467727532263558"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "dsl-docs-js-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-docs-js-1.11.0-SNAPSHOT-sources.jar",
+          "size": 49226,
+          "sha512": "e2b16e4801faed082d5b7910dd5baee7edc4c76cd8cbac4be1d411a32e485f8ca153abb2da7f8fa7898dafebe17508f588ab11e77b76a30f698f58c74b40249b",
+          "sha256": "e8d376d8c150f30ffd7dbb9fafa7801aa5117dec015a8c2e4240e07bd5759b19",
+          "sha1": "7fcfd768755f0e1aebe13eddb420d501d273a860",
+          "md5": "c6c982b3730a2a221ab23ed657d52e4d"
+        }
+      ]
+    }
+  ]
+}

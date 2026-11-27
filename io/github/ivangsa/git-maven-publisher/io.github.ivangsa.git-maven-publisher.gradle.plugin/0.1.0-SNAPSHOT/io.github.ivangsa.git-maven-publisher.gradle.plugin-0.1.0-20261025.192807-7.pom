@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.ivangsa.git-maven-publisher</groupId>
+  <artifactId>io.github.ivangsa.git-maven-publisher.gradle.plugin</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>git-maven-publisher Gradle plugin marker</name>
+  <description>Turns a Git repository into a Maven snapshot repository served as static files.</description>
+  <url>https://github.com/ivangsa/git-maven-publisher</url>
+  <inceptionYear>2026</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>ivangsa</id>
+      <name>Ivan Garcia Sainz-Aja</name>
+      <url>https://github.com/ivangsa</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/ivangsa/git-maven-publisher.git</connection>
+    <developerConnection>scm:git:https://github.com/ivangsa/git-maven-publisher.git</developerConnection>
+    <url>https://github.com/ivangsa/git-maven-publisher</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>io.github.ivangsa</groupId>
+      <artifactId>git-maven-publisher-gradle-plugin</artifactId>
+      <version>0.1.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

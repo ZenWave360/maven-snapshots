@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-views/1.11.1-SNAPSHOT/dsl-views-1.11.1-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-views",
+    "version": "1.11.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.1-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.1-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.1-SNAPSHOT.jar",
+          "size": 295128,
+          "sha512": "2520c514626f45d5ddce5575a66499c7837d90a1967fdc3be40eca1ca2b7ee42463658d307c9efba40814c18af6c5c15ff2ec2f5b9535da571a20adcfc05a346",
+          "sha256": "73836992d2d4ebbd2cdf172def6c3083898203d88c9d78864bd87c9d65b5c703",
+          "sha1": "7d70247f4e672f10d199f4186012d272bab5a1ec",
+          "md5": "a56aa93f9ea829e34be7b18cb00f06d6"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.1-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.1-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.1-SNAPSHOT.jar",
+          "size": 295128,
+          "sha512": "2520c514626f45d5ddce5575a66499c7837d90a1967fdc3be40eca1ca2b7ee42463658d307c9efba40814c18af6c5c15ff2ec2f5b9535da571a20adcfc05a346",
+          "sha256": "73836992d2d4ebbd2cdf172def6c3083898203d88c9d78864bd87c9d65b5c703",
+          "sha1": "7d70247f4e672f10d199f4186012d272bab5a1ec",
+          "md5": "a56aa93f9ea829e34be7b18cb00f06d6"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.1-SNAPSHOT-sources.jar",
+          "url": "dsl-views-jvm-1.11.1-SNAPSHOT-sources.jar",
+          "size": 51366,
+          "sha512": "8eb91772c257d4b7a1a5b372ca297bfc9ba911aa999d8ab085877161bcd877b94ed45a4d0c541103799f828c05221bb5346731a48b23aca2a9742a3937078887",
+          "sha256": "2df335ee6170c83040988d26757ee9402e2cc3c3944a2d3586dcbfb4ac89fdc5",
+          "sha1": "626c4293beea2217edb26eb787ceaab599662fd4",
+          "md5": "514f7faf0e6ed34309cbd0da340289c1"
+        }
+      ]
+    }
+  ]
+}

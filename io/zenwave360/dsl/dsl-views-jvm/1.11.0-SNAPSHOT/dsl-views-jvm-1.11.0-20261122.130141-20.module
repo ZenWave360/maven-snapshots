@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../dsl-views/1.11.0-SNAPSHOT/dsl-views-1.11.0-SNAPSHOT.module",
+    "group": "io.zenwave360.dsl",
+    "module": "dsl-views",
+    "version": "1.11.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 292949,
+          "sha512": "71df9cc3fca6dd463572da1df5297c4b913b42f97c779b7b4b69494071cd901fc9c95b9feee30fd800e1ee36d51bdcd1b400b9bf3c295a313b1c387414c56f89",
+          "sha256": "fe026d51978b957183c40a9c48d6499670daca6f391391c52a50f1f137806609",
+          "sha1": "a1a232d54bcd24ff240700a70f7ac66d64cd4bc2",
+          "md5": "a0ceefb9e2eb38639c12274407459f05"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.dsl",
+          "module": "dsl-kotlin",
+          "version": {
+            "requires": "1.11.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.6.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT.jar",
+          "size": 292949,
+          "sha512": "71df9cc3fca6dd463572da1df5297c4b913b42f97c779b7b4b69494071cd901fc9c95b9feee30fd800e1ee36d51bdcd1b400b9bf3c295a313b1c387414c56f89",
+          "sha256": "fe026d51978b957183c40a9c48d6499670daca6f391391c52a50f1f137806609",
+          "sha1": "a1a232d54bcd24ff240700a70f7ac66d64cd4bc2",
+          "md5": "a0ceefb9e2eb38639c12274407459f05"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "dsl-views-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "url": "dsl-views-jvm-1.11.0-SNAPSHOT-sources.jar",
+          "size": 50674,
+          "sha512": "15ec7bb83182767e1396b201ee648e2bfd06c6cbf012a76a88869e3062672e1178dab1c2859e0dbbfcd0dfcf66165af79469ef2586c9cb4187fdddd3f087736b",
+          "sha256": "31b2425d186d4968c6b217be455613df4e3422fc245a1e79320af69a13498114",
+          "sha1": "61f02a63c1e8ba5b7707ddf01f55bf71c24257f4",
+          "md5": "88211d5cee658cff37f9e5cd90582dea"
+        }
+      ]
+    }
+  ]
+}

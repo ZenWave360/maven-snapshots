@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.zenwave360.language",
+    "module": "lsp-jvm",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "lsp-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "lsp-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 85471,
+          "sha512": "1e42b5d5fa1a4c8512bcdc99a62923709bb6f5a8729bbe3b283aad72427d5b2df59b9435e151064c4359cbc6fb016ba36208ac1daec353cb6ee73c734fd9bb19",
+          "sha256": "d3c2bfe9365c3cc9a2caf90ccf56ff53f1ba026ac805c7efaa5b24ae81666bcb",
+          "sha1": "79a69ae0747b7491ac1a2e81eb7aa265188ece4b",
+          "md5": "279bc5b301f7c4603f8f46b090979be6"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.zenwave360.language",
+          "module": "lsp-core",
+          "version": {
+            "requires": "1.0.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.eclipse.lsp4j",
+          "module": "org.eclipse.lsp4j",
+          "version": {
+            "requires": "0.21.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8"
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lsp-jvm-1.0.0-SNAPSHOT.jar",
+          "url": "lsp-jvm-1.0.0-SNAPSHOT.jar",
+          "size": 85471,
+          "sha512": "1e42b5d5fa1a4c8512bcdc99a62923709bb6f5a8729bbe3b283aad72427d5b2df59b9435e151064c4359cbc6fb016ba36208ac1daec353cb6ee73c734fd9bb19",
+          "sha256": "d3c2bfe9365c3cc9a2caf90ccf56ff53f1ba026ac805c7efaa5b24ae81666bcb",
+          "sha1": "79a69ae0747b7491ac1a2e81eb7aa265188ece4b",
+          "md5": "279bc5b301f7c4603f8f46b090979be6"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "lsp-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "url": "lsp-jvm-1.0.0-SNAPSHOT-sources.jar",
+          "size": 12743,
+          "sha512": "852a7ffacb2356fd9705b9b2e28bb9ca231cc218f269698c01bb901bfed38de7f137c18d8b6689e4771664d08f249dc5b2a79dc81294cea9ccf28a9f73323f0e",
+          "sha256": "d58b758e1e203fb5a32cd152487b61250d1cf2ded680a879be63fe50f0c89944",
+          "sha1": "de8c24af9d1da4879b9b5ba530360ceb19af36ec",
+          "md5": "0319718ff0513d8a95f92beed6fe06a4"
+        }
+      ]
+    }
+  ]
+}
